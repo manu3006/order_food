@@ -49,7 +49,7 @@ padding: 10px 25px;
 } */
 /* start */
 .banner {
-background-image: url(lowandslow/dish.png);
+background-image: url(/lowandslow/dish.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;

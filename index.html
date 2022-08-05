@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>order of food</title>
     <link rel="stylesheet" href="./style2.css">
-    </link>
+    <link rel="stylesheet" href="./Typograpi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -15,10 +15,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script> -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <style>
         @font-face {
             font-family: "filson-soft";
@@ -44,6 +44,7 @@
 <body>
 
     <section class="banner">
+        <div class="overlay"> </div>
         <div class="content-wrapper">
             <div class="banner1">
                 <div class="b1">
@@ -52,10 +53,12 @@
                 <div class="b2">
                     <h1>Deliciaus</h1>
                 </div>
-                <div class="b3">
-                    <button>View the Menu</button>
+
+                <div class="primarye-button">
+                    <a href="">View the Menu</a>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- end -->
@@ -77,7 +80,9 @@
                             competitions with family and friends. What you’re tasting today is years of tinkering,
                             perseverance, and an undying passion for bringing you the most quality experience available.
                         </p>
-                        <a href="">Lear More</a>
+                        <div class="some-text">
+                            <a href="">Lear More</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,8 +99,12 @@
         <div class="Events2 common">
             <img src="./Group 2700-1.svg" alt="">
             <h3>Join Our Loyalty Program</h3>
-            <p>If you are an EMS, firefighter, police officer, or serve in the military, join our program today!</p>
-            <button>Sign up Here</button>
+            <div class="EMS">
+                <p>If you are an EMS, firefighter, police officer, or serve in the military, join our program today!</p>
+            </div>
+            <div class="secondary-button">
+                <a href="#">View the Menu</a>
+            </div>
         </div>
     </section>
     <!-- end -->
@@ -106,10 +115,9 @@
                 <h5>We Use Local Ingredients</h5>
             </div>
             <div class="center">
-                <p>We use only the freshest and most natural ingredients when creating our signature savory dishes.
-                    We serve locally sourced goods and ingredients as often as possible, given the season, quality, and
-                    availability.
-                    Although there’s one thing you can always count on, we’ll serve, and that’s delicious.</p>
+                <p>Every week we go out into the community to find only the freshest and most natural ingredients to
+                    create our signature savory dishes. Our community is important to us; that’s why we rely on ours for
+                    the highest quality of locally sourced goods.</p>
             </div>
             <div class="content-wrapper">
                 <div class="flex-box">
@@ -193,7 +201,7 @@
                     <h4>Our Location</h4>
                 </div>
                 <div class="heading5">
-                    <h5>We Use Local Ingredients</h5>
+                    <h5>Fly or Drive to us</h5>
 
                 </div>
                 <div class="Located">
@@ -321,7 +329,7 @@
 
     </section>
     <!-- end -->
-   
+
     <!-- FOLLOW US STARTS -->
     <section class="fancy-box">
         <div class="content-wrapper">
@@ -411,7 +419,7 @@
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
@@ -427,21 +435,21 @@
     });
     // end
     $('[data-fancybox]').fancybox({
-  // Options will go here
-  buttons : [
-    'close'
-  ],
-  wheel : false,
-  transitionEffect: "slide",
-   // thumbs          : false,
-  // hash            : false,
-  loop            : true,
-  // keyboard        : true,
-  toolbar         : false,
-  // animationEffect : false,
-  // arrows          : true,
-  clickContent    : false
-});
+        // Options will go here
+        buttons: [
+            'close'
+        ],
+        wheel: false,
+        transitionEffect: "slide",
+        // thumbs          : false,
+        // hash            : false,
+        loop: true,
+        // keyboard        : true,
+        toolbar: false,
+        // animationEffect : false,
+        // arrows          : true,
+        clickContent: false
+    });
 </script>
 
 </html>
